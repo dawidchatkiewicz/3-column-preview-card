@@ -1,0 +1,126 @@
+:root {
+	--brighto-orange: hsl(31, 77%, 52%);
+	--dark-cyan: hsl(184, 100%, 22%);
+	--very-dark-cyan: hsl(179, 100%, 13%);
+
+	--transparent-white: hsla(0, 0%, 100%, 0.75);
+	--very-light-gray: hsl(0, 0%, 95%);
+
+	--ff-accent: 'Big Shoulders Display', cursive;
+	--ff-normal: 'Lexend Deca', sans-serif;
+
+	--fw-accent: 700;
+	--fw-normal: 400;
+
+	--fs-body: 1rem;
+	--fs-heading: 2rem;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--ff-normal);
+	font-size: var(--fs-body);
+	color: var(--transparent-white);
+	background-color: var(--very-light-gray);
+}
+
+.btn-orange {
+	color: var(--brighto-orange);
+}
+
+.btn-cyan {
+	color: var(--dark-cyan);
+}
+
+.btn-dark-cyan {
+	color: var(--very-dark-cyan);
+}
+
+.card {
+	padding: 2rem;
+}
+
+.card__button {
+	font-family: var(--ff-normal);
+	background-color: var(--very-light-gray);
+	border: 2px solid #fff;
+	border-radius: 1.2rem;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+
+.card__button:hover {
+	background-color: transparent;
+	color: #fff;
+}
+
+.card__description {
+	margin-bottom: 1.7rem;
+	font-weight: var(--fw-normal);
+	line-height: 1.9;
+}
+
+.card__icon {
+	margin-bottom: 1.5rem;
+}
+
+.card__title {
+	margin-bottom: 1.5rem;
+	font-family: var(--ff-accent);
+	text-transform: uppercase;
+	font-size: var(--fs-heading);
+}
+
+.container {
+	padding: 1.5rem;
+}
+
+.orange {
+	background-color: var(--brighto-orange);
+	border-radius: 1rem 1rem 0 0;
+}
+
+.cyan {
+	background-color: var(--dark-cyan);
+}
+
+.dark-cyan {
+	background-color: var(--very-dark-cyan);
+	border-radius: 0 0 1rem 1rem;
+}
+
+@media (min-width: 992px) {
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 100vh;
+		max-width: 900px;
+		margin: auto;
+	}
+	.orange {
+		background-color: var(--brighto-orange);
+		border-radius: 1rem 0 0 1rem;
+	}
+	.dark-cyan {
+		background-color: var(--very-dark-cyan);
+		border-radius: 0 1rem 1rem 0;
+	}
+	.card__description {
+		margin-bottom: 5rem;
+	}
+}
